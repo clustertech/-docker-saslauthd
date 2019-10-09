@@ -5,4 +5,4 @@ yum clean all; \
 mkdir /etc/saslauthd; \
 ln -s /etc/saslauthd/saslauthd.conf /etc/saslauthd.conf
 COPY . /
-CMD /startsaslauthd.sh
+ENTRYPOINT /startsaslauthd.sh
